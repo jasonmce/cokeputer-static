@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box
+}
+
+html {
+  background: #000
+}
+
+body {
+  margin: 0;
+  color: white;
+  font: 16px "Times New Roman", serif;
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  min-height: 100vh
+}
+
+a {
+  color: #ffe49a
+}
+
+a:visited {
+  color: #ead0ff
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px
+}
+
+.skip {
+  position: absolute;
+  top: -80px;
+  padding: 12px;
+  background: #000;
+  z-index: 4
+}
+
+.skip:focus {
+  top: 0
+}
+
+aside {
+  background: #000;
+  padding: 0 5px 24px;
+  width: 190px
+}
+
+a.brand {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 12px 0 10px
+}
+
+.brand small {
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 4px
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 90px 90px;
+  gap: 0;
+  align-items: center
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+  text-decoration: none
+}
+
+nav>a:first-child {
+  grid-column: 1/-1;
+  min-height: 84px
+}
+
+nav img {
+  display: block;
+  max-width: 100%;
+  height: auto
+}
+
+nav a:hover {
+  filter: brightness(1.35)
+}
+
+nav a[aria-current=page] {
+  outline: 1px dotted #aaa;
+  outline-offset: -4px
+}
+
+.history-button {
+  background: #006000;
+  border: 1px solid white;
+  width: 74px;
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  font-style: italic;
+  line-height: 36px
+}
+
+.history-button small {
+  display: block;
+  font: bold 10px Arial;
+  letter-spacing: 2px;
+  border-top: 1px solid white;
+  padding: 2px
+}
+
+.lcd-panel h2 {
+  font-size: 24px;
+  color: lime;
+  text-align: center;
+  margin: 20px 0 10px
+}
+
+.lcd {
+  background: #0f0;
+  color: #001500;
+  border: 3px ridge #555;
+  font: 14px/1.5 monospace;
+  padding: 9px 3px;
+  min-height: 112px;
+  white-space: pre;
+  overflow: hidden
+}
+
+.lcd-panel button {
+  display: block;
+  margin: 10px auto;
+  background: #222;
+  color: #fff;
+  border: 1px solid #777;
+  padding: 6px 10px;
+  cursor: pointer;
+  font: 14px serif
+}
+
+.lcd-panel small {
+  display: block;
+  color: #bbb;
+  text-align: center;
+  font-size: 12px
+}
+
+.extra-links {
+  display: grid;
+  gap: 12px;
+  text-align: center;
+  margin-top: 26px;
+  font-size: 14px
+}
+
+main {
+  background: #900;
+  min-width: 0;
+  padding: 8px 16px 24px
+}
+
+article {
+  max-width: 1200px;
+  line-height: 1.28
+}
+
+article h4 {
+  font-size: 1rem
+}
+
+article img {
+  height: auto
+}
+
+article td {
+  vertical-align: top
+}
+
+article table {
+  max-width: 100%
+}
+
+article pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 16px
+}
+
+article font[size="-3"] {
+  font-size: 14px
+}
+
+.archive-note {
+  font: 13px/1.4 Arial, sans-serif;
+  border-bottom: 1px solid #c35555;
+  padding: 7px 0 12px;
+  color: #ffe0d6
+}
+
+.archive-note span {
+  display: block;
+  margin-top: 3px
+}
+
+.missing-photo {
+  display: block;
+  border: 1px dashed #d88;
+  padding: 24px 12px;
+  color: #f5cccc;
+  font: 14px/1.5 serif;
+  max-width: 300px;
+  overflow-wrap: anywhere
+}
+
+footer {
+  margin-top: 36px;
+  border-top: 1px solid #b44;
+  padding-top: 12px;
+  font-size: 14px
+}
+
+.sample {
+  width: 220px
+}
+
+article h1 {
+  font-size: 28px
+}
+
+@media(max-width:640px) {
+  body {
+    display: block
+  }
+
+  aside {
+    width: 100%;
+    padding: 10px 12px
+  }
+
+  a.brand {
+    padding-top: 0
+  }
+
+  nav {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    max-width: 460px;
+    margin: auto
+  }
+
+  nav>a:first-child {
+    grid-column: auto;
+    min-height: 70px
+  }
+
+  nav>img {
+    display: none
+  }
+
+  .history-button {
+    font-size: 17px;
+    width: 100%
+  }
+
+  .lcd-panel {
+    max-width: 230px;
+    margin: auto
+  }
+
+  .extra-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 18px 0 5px
+  }
+
+  main {
+    padding: 8px 12px 24px
+  }
+
+  article table,
+  article tbody,
+  article tr,
+  article td {
+    display: block;
+    width: 100% !important
+  }
+
+  article img[align] {
+    float: none;
+    display: block;
+    margin: 12px auto
+  }
+
+  article table img {
+    margin: 12px auto
+  }
+
+  article h4 {
+    line-height: 1.4
+  }
+}

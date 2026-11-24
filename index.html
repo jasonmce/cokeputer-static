@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Have a coke with a nerd, and a smile | CokePuter</title>
+  <meta name="description"
+    content="The restored CokePuter website: a Coke machine, a Compaq 486, and a nerd with a dream.">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+
+<body><a class="skip" href="#content">Skip to content</a>
+  <aside><a class="brand" href="index.html">CokePuter<small>Have a coke with a
+        nerd, and a smile</small></a>
+    <nav aria-label="Original site navigation"><a href="index.html" title="Main"
+        aria-current="page"><img src="assets/navigation_r2_c3.gif" alt="Main"
+          width="112"></a><a href="lasttwenty.html"
+        title="Last twenty purchases"><img src="assets/navigation_r5_c2.gif"
+          alt="Last twenty purchases" width="90"></a><a href="contents.html"
+        title="Current contents"><img src="assets/navigation_r5_c5.gif"
+          alt="Current contents" width="90"></a><a href="history.html"
+        title="History"><span
+          class="history-button">History<small>PUSH</small></span></a><a
+        href="https://bso.io/" title="Bright Shiny Object"><img
+          src="assets/navigation_r6_c4.gif" alt="Bright Shiny Object"
+          width="90"></a><img src="assets/navigation_r9_c1.gif"
+        alt="Decorative Dr Place Holder button" width="90"><img
+        src="assets/navigation_r9_c4.gif"
+        alt="Decorative Dr Place Holder button" width="90"></nav>
+    <section class="lcd-panel" aria-label="Virtual LCD">
+      <h2>Virtual LCD</h2>
+      <div class="lcd" id="lcd">***Last
+        Purchases***<br>coker&nbsp;&nbsp;&nbsp;&nbsp;beer<br>coker&nbsp;&nbsp;&nbsp;&nbsp;sprite<br>coker&nbsp;&nbsp;&nbsp;&nbsp;beer
+      </div><button id="lcd-next" type="button">Change
+        display</button><small>2003 archive / local clock demo</small>
+    </section>
+    <div class="extra-links"><a href="lcd.html">About the LCD</a><a
+        href="under-destruction.html">Under destruction</a><a
+        href="about.html">About this restoration</a></div>
+  </aside>
+  <main id="content">
+    <article>
+      <h4>Coke Adds Life (and Decrements Counters)</h4>
+      <p align="center">
+        <font size="+2"><strong>The CokePuter has moved! (physcially)</strong>
+        </font>
+      </p>
+      <h4 align="center">Jason moved outta Laurel, and he took the CokePuter
+        with him.
+        A big thanks to all the people who helped me move this huge honking
+        thing! So
+        it's now happily living in Claymont, DE. A new picture will be up
+        shortly...</h4>
+      <p align="center"> </p>
+      <h4>be patient, this page being served by the CokePuter, a frankensteined
+        compaq486
+        with 8megs running Apache (because MS PWS is <u>unsafe</u> and unweildy)
+      </h4>
+      <p>Welcome to our CokePuter page! Revel in our Nerdiness! Gawk at our
+        Slothfulness!
+        Gape slack-jawed at our wasting of technology! Shudder in our wanton
+        abuses
+        of hardware/software just to monitor vending machine activity!</p>
+      <table border="0" width="100%">
+        <tr>
+          <td width="41%"><span class="missing-photo">Original photo
+              unavailable: CokeputerInDE.jpg</span></td>
+          <td width="59%">
+            <p align="left"> </p>
+            <p align="left"><strong>Current Hardware:</strong><br />
+              80486, 8megs ram, 200meg HDD (60meg free), soundblaster 8bit, <a
+                href="http://CrystalFontz.com">CrystalFontz
+                20x4 LCD ArrayBacklight Display </a>and a LogitecCamera that
+              uses the
+              serial port and keyboard port instead of a USB port (since the
+              cokeputer
+              doesn't have a USB port). But as you'll read in old news, it
+              doesn't matter
+              because I wrote my caputer code using TWAIN and this cam doesn't
+              like...</p>
+            <p align="left"><strong>Software:</strong><br />
+              Win95, CokeMachine 1.4 software (my own stuff), Apache 1.3.22,
+              WinVNC
+              (for remote admin)<br />
+              <br />
+              This is New CokeMachine, since I fried the motherboard of Classic
+              CokeMachine
+              by accidently running 110vac thru it. When this happens you'll see
+              the
+              <a href="under-destruction.html">under destruction</a> page
+              instead
+              of CokePuter<br />
+            </p>
+            <p> </p>
+            <h1 align="center"><b><i></i></b></h1>
+          </td>
+        </tr>
+      </table>
+      <p> </p>
+      <h2 align="center"><b><i>OLD NEWS ITEMS</i></b></h2>
+      <p align="center">
+        <font size="+2">PointlessCode added!</font>&lt;16dec02&gt;<br />
+        Found a cool sunrise/sunset calculator c++ class online, so integrated
+        it into
+        the cokeputer. Now the LCD display backlight turns on at sunset, off at
+        sunrise.
+        In theory I could make the virtual LCD turn grey-background during the
+        day to
+        reflect this. Okay, maybe when I get more free time ;-p<br />
+      </p>
+      <h4 align="center">Spent a coupla mins and fixed all the VirtualLCD. Have
+        to play
+        with cleaning up the black table lines...</h4>
+      <h4 align="center">&lt;Dangnibit&gt;Machine doesn't like it's TWAIN
+        drivers&lt;/Dangnibit&gt;18sept02</h4>
+      Finally found and implemented the code so the cokeputer could twain in
+      images
+      from a cam. Got it working just fine on my dev machine. So xported it to
+      the cokeputer,
+      but no dice. Turns out that for Win95 the Logitech VCcam doesn't like
+      twain, it's
+      got its own custom OCX that'll just make me angry. This would actually
+      make it
+      worth upgrading from my (very funny) 8meg 486... I'm almost half temped to
+      install
+      the other cam and OCX's just to get the software working for migrating to
+      the
+      CokePuter. Almost ;-p
+      <h4 align="center"></h4>
+      <p align="center"> </p>
+      <h4 align="center">&lt;woohoo&gt;The LCD Display's not dead after
+        all!&lt;/woohoo&gt;18sept02</h4>
+      Turns out it was just having issues. I did a big reboot tonite while
+      trying to
+      get twain to work, and it came back on. Silly technology...
+      <h4 align="center">&lt;sigh&gt;The LCD Display's gone all
+        kaplooie&lt;/sigh&gt;12sept02</h4>
+      We had a power outtage. So nothing new, the machine reboots and detects
+      problems
+      with the FAT tables due to apache (still haven't figured that one out yet,
+      but
+      happens after every hard reboot). But later I noticed that the LCD Display
+      was
+      blank. Backlit, but nothing was popping up. So one of these nights I'll
+      pull it
+      and test it on my development machine to find out if it's the display
+      ($45) or
+      com1 port (we've got lots of extra 486 motherboards in the basement).
+      <h4>
+        <center>
+          Months of Continuous Operation (woohoo!) 3aug02
+        </center>
+      </h4>
+      While I was gone for six weeks in the S Pacific, I thought for sure it was
+      going
+      to crash. It usually does. Normally around five mins after I'm out the
+      door. But
+      to my surprise it worked just fine the whole time I was gone. Of course
+      the first
+      night I'm back one of the juice cans turns sideways and jams the machine,
+      but
+      otherwise just fine (jp and I fixed it with a cookie tray and steak
+      knife). So
+      I'm pretty proud of the machine!
+      <p>  </p>
+    </article>
+    <footer>CokePuter · Jason McEachen · <a href="about.html">Restoration
+        notes</a></footer>
+  </main>
+</body>
+
+</html>

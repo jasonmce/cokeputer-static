@@ -1,0 +1,14 @@
+# Editor workspace settings
+.vscode/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local build and archive output
+*.tar
